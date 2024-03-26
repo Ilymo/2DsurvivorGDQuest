@@ -16,4 +16,15 @@ func _on_spawn_timer_timeout():
 
 func _on_player_health_depleted():
 	%GameOver.show()
-	get_tree().paused = true
+	%Player.paused = true
+	get_tree().call_group("mobs", "queue_free")
+	await get_tree().create_timer(1).timeout
+	%StartButton.show()
+
+
+	
+func _on_start_button_pressed():
+	%GameOver.hide()
+	get_tree().paused = false
+	get_tree().call_group("mobs", "queue_free")
+	

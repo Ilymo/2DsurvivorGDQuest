@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b41optcwu7dq1"]
+[gd_scene load_steps=6 format=3 uid="uid://b41optcwu7dq1"]
 
 [ext_resource type="Script" path="res://survivors_game.gd" id="1_k85di"]
 [ext_resource type="PackedScene" uid="uid://snhi2ic3av33" path="res://player.tscn" id="1_qxxi8"]
@@ -9,6 +9,13 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -178, -186, 0, 0, 0, 0, 2159, -190, 0, 0, 0, 0, 2155, 1267, 0, 0, 0, 0, -175, 1269, 0, 0, 0, 0, -178, -186)
 }
 point_count = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_73xtc"]
+bg_color = Color(0, 0, 0, 0.564706)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
@@ -22,6 +29,7 @@ offset_right = 1925.0
 offset_bottom = 1085.0
 
 [node name="Player" parent="." instance=ExtResource("1_qxxi8")]
+unique_name_in_owner = true
 position = Vector2(962, 539)
 
 [node name="Path2D" type="Path2D" parent="Player"]
@@ -98,5 +106,26 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 200
 text = "Game Over"
 
+[node name="StartButton" type="Button" parent="GameOver"]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -280.0
+offset_top = -230.0
+offset_right = 280.0
+offset_bottom = -69.9998
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0.627451, 0, 1)
+theme_override_font_sizes/font_size = 111
+theme_override_styles/normal = SubResource("StyleBoxFlat_73xtc")
+action_mode = 0
+text = "Play Again"
+
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="timeout" from="Spawn_Timer" to="." method="_on_spawn_timer_timeout"]
+[connection signal="pressed" from="GameOver/StartButton" to="." method="_on_start_button_pressed"]

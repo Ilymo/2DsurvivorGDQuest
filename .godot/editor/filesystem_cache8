@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711474019
+::res://::1711477510
 Bullet.gd::GDScript::-1::1711389444::0::1::::<>Area2D<>::
 bullet.tscn::PackedScene::3144662174539429143::1711470781::0::1::::<><>::res://Bullet.gd<>uid://dftkbqwsfd68r::::res://pistol/projectile.png
 default_bus_layout.tres::AudioBusLayout::6564268947468103023::1695664579::0::1::::<><>::
@@ -7,12 +7,12 @@ gun.gd::GDScript::-1::1711389738::0::1::::<>Area2D<>::
 gun.tscn::PackedScene::1414047724592492829::1711470781::0::1::::<><>::res://gun.gd<>uid://cswb5do8rrj7q::::res://pistol/pistol.png
 icon.png::CompressedTexture2D::621515402784007901::1695664579::1711381987::1::::<><>::
 mob.gd::GDScript::-1::1711390279::0::1::::<>CharacterBody2D<>::
-mob.tscn::PackedScene::5954838434293284411::1711470781::0::1::::<><>::uid://ogik4s70pgwl::::res://characters/slime/slime.tscn<>res://mob.gd
+mob.tscn::PackedScene::5954838434293284411::1711477101::0::1::::<><>::uid://ogik4s70pgwl::::res://characters/slime/slime.tscn<>res://mob.gd
 pine_tree.tscn::PackedScene::8130425855226251488::1711470781::0::1::::<><>::uid://b7rhtttevhxtj::::res://characters/ground_shadow.png<>uid://caqfk2xng5v5u::::res://trees/pine_tree.png
-player.gd::GDScript::-1::1711472982::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1290676832205167144::1711472982::0::1::::<><>::res://player.gd<>uid://pbmyh1qru7p::::res://characters/happy_boo/happy_boo.tscn<>uid://ue8fokg24hqj::::res://gun.tscn
-survivors_game.gd::GDScript::-1::1711472019::0::1::::<>Node2D<>::
-survivors_game.tscn::PackedScene::4476448797669727686::1711472019::0::1::::<><>::res://survivors_game.gd<>uid://snhi2ic3av33::::res://player.tscn<>uid://dn3o6qofa1hcq::::res://pine_tree.tscn
+player.gd::GDScript::-1::1711475523::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1290676832205167144::1711476894::0::1::::<><>::res://player.gd<>uid://pbmyh1qru7p::::res://characters/happy_boo/happy_boo.tscn<>uid://ue8fokg24hqj::::res://gun.tscn
+survivors_game.gd::GDScript::-1::1711477353::0::1::::<>Node2D<>::
+survivors_game.tscn::PackedScene::4476448797669727686::1711477353::0::1::::<><>::res://survivors_game.gd<>uid://snhi2ic3av33::::res://player.tscn<>uid://dn3o6qofa1hcq::::res://pine_tree.tscn
 ::res://addons/::1695664579
 ::res://addons/colorpicker_presets/::1695664579
 colorpicker_presets.gd::GDScript::-1::1695664579::0::1::::<>EditorPlugin<>::
